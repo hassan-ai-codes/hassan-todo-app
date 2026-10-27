@@ -1,0 +1,105 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    font-family: Arial, sans-serif;
+    background: #add8e6;
+    color: #24324a;
+}
+
+#todoApp {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+}
+
+#todoApp h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+#todoForm input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 12px;
+    border: 1px solid #ccd3df;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#todoForm button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#todoFilters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 22px 0;
+}
+
+#todoFilters button {
+    flex: 1;
+    padding: 11px;
+    border: none;
+    border-radius: 8px;
+    background: #5b55f5;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#todoList {
+    padding-left: 22px;
+}
+
+#todoList li {
+    margin-bottom: 14px;
+    overflow-wrap: anywhere;
+}
+
+#todoList li button {
+    margin: 5px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 6px;
+    background: #3020ee;
+    color: white;
+    cursor: pointer;
+}
+
+#todoCounter {
+    margin-top: 25px;
+    text-align: center;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+@media (max-width: 400px) {
+    #todoApp {
+        padding: 18px;
+    }
+
+    #todoApp h1 {
+        font-size: 27px;
+    }
+}
