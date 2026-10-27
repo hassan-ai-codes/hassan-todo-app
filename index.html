@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hassan To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="todoApp">
+        <h1>Hassan's To-Do App</h1>
+
+        <form id="todoForm">
+            <input
+                type="text"
+                id="todoInput"
+                placeholder="Enter a task"
+                required
+            >
+            <button type="submit">Add Task</button>
+        </form>
+
+        <div id="todoFilters">
+            <button type="button" data-filter="all">All</button>
+            <button type="button" data-filter="active">Active</button>
+            <button type="button" data-filter="completed">Completed</button>
+        </div>
+
+        <ul id="todoList"></ul>
+        <p id="todoCounter"></p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
